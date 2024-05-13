@@ -1,6 +1,8 @@
 var navigate = document.getElementById("navigation")
 var toggle = document.getElementById("menu-toggle")
 var slide = document.getElementsByClassName("slide")
+var dropInput = document.getElementById("owners")
+var seeMore = document.getElementById("dp")
  
 const active = () => {
     navigate.classList.toggle("active")
@@ -9,6 +11,11 @@ const active = () => {
 
 toggle.addEventListener("click",active)
 
+const iNput = () =>{
+    dropInput.classList.toggle("iNput")
+    console.log("Plsssse")
+}
+seeMore.addEventListener("click", iNput)
 
 let slideIndex = 0
 const hide = () => {
